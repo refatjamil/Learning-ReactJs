@@ -20,6 +20,7 @@ export const LearnJSX = () => {
 
         {/* Attribute in JSX */}
         <p className="bg-primary">Learn JSX - Attribute in JSX3</p>
+        ........................
         </>
     )
 }
