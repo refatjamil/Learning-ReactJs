@@ -20,6 +20,7 @@ export const LearnEvent = () => {
 
         <button onClick={()=>WithARG("after clicked WithARG button")}>With Argument</button>
         <p id="wa2"></p>
+        ...........................
         </>
     )
 }
