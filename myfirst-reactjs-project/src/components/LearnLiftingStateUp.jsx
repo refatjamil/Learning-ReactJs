@@ -7,9 +7,8 @@ export const LearnLiftingStateUp =(props) => {
 
     return(
         <> 
-        <h1>Learn Lifitng State Up</h1>
+        <h1>- Learn Lifitng State Up</h1>
         <button onClick={myClick}>myclick</button>
-        ....................
         </>
     )
 }

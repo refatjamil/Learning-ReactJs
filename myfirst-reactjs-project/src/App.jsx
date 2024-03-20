@@ -5,6 +5,8 @@ import { LearnEvent } from './components/LearnEvent'
 import { LearnLiftingStateUp } from './components/LearnLiftingStateUp'
 import {LearnUseState} from './components/LearnUseState'
 import {CountApp} from './components/CountApp'
+import { LearnUseEffect } from './components/LearnUseEffect'
+import { LearnUseMemo } from './components/LearnUseMemo'
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
     <LearnLiftingStateUp click={getData}/>
     <LearnUseState/>
     <CountApp/>
+    <LearnUseEffect/>
+    <LearnUseMemo/>
 
     </>
   )

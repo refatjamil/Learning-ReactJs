@@ -6,7 +6,7 @@ export const LearnJSX = () => {
     return(
         <>
         {/* React.createElement("h1", "null", "Learn JSX") */}
-        <h1>Learn JSX</h1>
+        <h1>- Learn JSX</h1>
 
 
         {/* React.createElement("p", "null", "Learn JSX 1") */}
@@ -20,7 +20,6 @@ export const LearnJSX = () => {
 
         {/* Attribute in JSX */}
         <p className="bg-primary">Learn JSX - Attribute in JSX3</p>
-        ........................
         </>
     )
 }

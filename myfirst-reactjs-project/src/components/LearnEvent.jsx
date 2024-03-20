@@ -13,14 +13,13 @@ export const LearnEvent = () => {
 
     return (
         <>
-        <h1>Learn Event</h1>
+        <h1>- Learn Event</h1>
 
         <button onClick={WithoutARG}>Without Argument</button>
         <p id="wa1"></p>
 
         <button onClick={()=>WithARG("after clicked WithARG button")}>With Argument</button>
         <p id="wa2"></p>
-        ...........................
         </>
     )
 }

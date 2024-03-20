@@ -1,11 +1,12 @@
 import { useState } from "react"
-
+  
 export const CountApp = () => {
 
     const [count, setCount] = useState(0)
     
     const countNumber = () => {
-        setCount(count + 1)
+        // setCount(count + 1)
+        setCount(prevcount => prevcount + 1)
     }
     
     const reset = () =>{
@@ -14,7 +15,7 @@ export const CountApp = () => {
 
   return (
     <>
-        <h1>CountApp</h1>
+        <h1>- CountApp</h1>
 
 
         <h3>Number: {count} </h3>
