@@ -7,6 +7,7 @@ import {LearnUseState} from './components/LearnUseState'
 import {CountApp} from './components/CountApp'
 import { LearnUseEffect } from './components/LearnUseEffect'
 import { LearnUseMemo } from './components/LearnUseMemo'
+import { LearnUseCallback } from './components/LearnUseCallback'
 
 function App() {
 
@@ -15,15 +16,18 @@ function App() {
   }
   return (
     <>
-    <LearnComponents/>
+    {/* <LearnComponents/>
     <LearnJSX/>
     <LearnProps name="Refat Jamil" roll={121} />
     <LearnEvent/>
     <LearnLiftingStateUp click={getData}/>
     <LearnUseState/>
-    <CountApp/>
-    <LearnUseEffect/>
-    <LearnUseMemo/>
+    <CountApp/> */}
+    {/* <LearnUseEffect/>  */}
+   
+    {/* <LearnUseMemo/>  */}
+    
+    <LearnUseCallback/>
 
     </>
   )

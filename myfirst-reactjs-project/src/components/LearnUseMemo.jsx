@@ -16,13 +16,22 @@ export const LearnUseMemo = () => {
         setRandomNumber(newRandomNumber)
     }
 
+    const isCountTen = useMemo(() =>{
+        console.log('iscountTen')
+        if (count === 10){
+            return 'Yes'
+        }
+        return 'No'
 
-  return (
+    }, [count])
+
+    return (
+
     <>
         <h1>- LearnUseMemo</h1>
         <h2>Count</h2>
 
-        <h3>Number: {count} </h3>
+        <h3>is  {count} == {isCountTen}</h3>
 
         <button onClick={countNumber}>Count</button>
 

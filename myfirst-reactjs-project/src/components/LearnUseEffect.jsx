@@ -13,22 +13,37 @@ export const LearnUseEffect = () => {
         const newRandomNumber = Math.floor(Math.random() * 100) + 1
         setRandomNumber(newRandomNumber)
     }
+// Example 1- It runs each time when component is mounted and re-render
+     
+        // useEffect(()=>{
+        //     console.log("useEffact called");
+        // })
 
-    // useEffect(()=>{
-    //     console.log("useEffact called")
-    // }, [])
+// Example 2- It runs once time when component is mounted ([]) means no dependecies
+  
+        // useEffect(()=>{
+        //     console.log("useEffact called")
+        // }, [])
 
+
+// Example 3- It runs once time when component is mounted and whenever dependence changes
+    
     // useEffect(()=>{
     //     console.log("useEffact called")
     // }, [count])
 
-    useEffect(()=>{
-        console.log("useEffact called")
-        return () => {
-            console.log('component will unmount')
-        }
+/* Example 4- The cleanup function (the function you return from useEffect)
+    run when the component unmount or when the dependencies in the dependecncy array change.
+    Since count is in the dependency array, whenever count changes, the cleanup
+function is called before the new effect runs */
+
+    // useEffect(()=>{
+    //     console.log("useEffact called")
+    //     return () => {
+    //         console.log('component will unmount')
+    //     }
         
-    }, [count])
+    // }, [count])
 
   return (
     <>
